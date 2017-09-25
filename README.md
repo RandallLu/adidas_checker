@@ -4,7 +4,7 @@ This is a small program that allows user to check a stock of a specific shoes us
 
 # How to use
 
-Simply run "python checker.py"
+Simply run "python3 checker.py" and follow the instructions
 
 # TODO list
 
