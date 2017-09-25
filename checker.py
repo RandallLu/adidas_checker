@@ -119,5 +119,5 @@ if __name__ == '__main__':
         checkOrder()
     else:
         checkStock()
-    input("\npress any key to exit")
-    print("See you next time!")
+    input('\n',datetime.now(),"press any key to exit")
+    print(datetime.now(),"See you next time!")
