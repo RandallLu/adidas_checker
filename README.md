@@ -8,5 +8,5 @@ Simply run "python checker.py"
 
 # TODO list
 
--[] More user-friendly interface . 
--[] More add-on functions
+* [] More user-friendly interface . 
+* [] More add-on functions
