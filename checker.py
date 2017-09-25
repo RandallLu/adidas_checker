@@ -111,6 +111,7 @@ def checkOrderHelper(email, orderNo):
 
 #main driver
 if __name__ == '__main__':
+    print(datetime.now(), "Welcome to Checker!")
     print(datetime.now(),"What do you want to do ?")
     print(datetime.now(),"A: check orders  B: check stock")
     method = input("Enter: (A/B)")
