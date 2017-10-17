@@ -6,7 +6,8 @@ from termcolor import colored
 from util import util
 from datetime import datetime
 
-
+class checker:
+    
 
 def checkStock():
     proxy={
@@ -18,7 +19,6 @@ def checkStock():
     pid = input("Please enter Pid: ")
     url = util.stock_url + pid
     header = util.header
-
     session = requests.session()
     res = session.get(url, headers=header)
     #res = session.get(url, headers=header, proxies=proxy)
@@ -40,8 +40,8 @@ def checkStock():
         print("{0}|{1}".format(
         "{}".format(each['attributes']['size']).center(8," "),
         colored(str(each["ATS"]).center(12," "), 'green' if ATS!= 0 else 'red')))
-        print("-------------------")
-        print("Total stock: {}".format(colored(T_ATS,'green')))
+    print("-------------------")
+    print("Total stock: {}".format(colored(T_ATS,'green')))
 
 
 def checkOrder():
@@ -119,5 +119,5 @@ if __name__ == '__main__':
         checkOrder()
     else:
         checkStock()
-    input('\n',datetime.now(),"press any key to exit")
+    input(str(datetime.now())+"press any key to exit")
     print(datetime.now(),"See you next time!")
